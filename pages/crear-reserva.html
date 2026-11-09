@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear reserva | Reserva de Espacios UNIAJC</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<input class="menu-check" type="checkbox" id="menu-check" aria-label="Abrir menú">
+<nav class="menu" aria-label="Navegación principal">
+  <a class="menu__logo" href="../index.html">Reserva de Espacios</a>
+  <p class="menu__titulo">Usuario</p><a class="menu__link" href="espacios.html">Espacios</a>
+  <a class="menu__link" href="disponibilidad.html">Buscar disponibilidad</a>
+  <a class="menu__link" href="agenda-espacio.html">Agenda de un espacio</a>
+  <a class="menu__link menu__link--activo" href="crear-reserva.html">Crear reserva</a>
+  <a class="menu__link" href="mis-reservas.html">Mis reservas</a>
+  <p class="menu__titulo">Administración</p>
+  <a class="menu__link" href="dashboard.html">Dashboard</a>
+  <a class="menu__link" href="registrar-espacio.html">Registrar espacio</a>
+  <a class="menu__link" href="gestionar-bloqueos.html">Bloqueos</a>
+  <a class="menu__link" href="crear-bloqueo.html">Crear bloqueo</a>
+  <a class="menu__link" href="agenda-global.html">Agenda global</a>
+  <a class="menu__link" href="indicadores.html">Indicadores</a>
+  <p class="menu__titulo">Cuenta</p><a class="menu__link" href="login.html">Cerrar sesión</a>
+</nav>
+<div class="contenido">
+  <header class="barra"><label class="barra__boton" for="menu-check">☰</label>
+    <span class="barra__titulo">Sistema de Reserva de Espacios UNIAJC</span>
+    <a href="mis-reservas.html">Avisos (3)</a><span class="barra__perfil">Santiago Bocanegra · ADMINISTRADOR</span></header>
+  <main class="principal">
+    <div class="cabecera"><h1>Crear reserva</h1><p>Separa un espacio para tu actividad.</p></div>
+<div class="grid grid--2"><form class="tarjeta form" action="#" method="post"><div class="campo campo--ancho"><label for="espacio">Espacio</label>
+  <select id="espacio" name="espacio"><option>Auditorio Principal</option>
+    <option>Sala de Reuniones 201</option>
+    <option selected>Laboratorio de Sistemas</option>
+    <option>Aula Múltiple</option></select></div>
+    <div class="campo "><label for="fecha">Fecha</label>
+      <input id="fecha" name="fecha" type="date" value="2026-11-06"></div>
+      <div class="campo "><label for="asistentes">Asistentes</label>
+      <input id="asistentes" name="asistentes" type="number" value="25"><small>Máximo 30</small></div>
+      <div class="campo "><label for="inicio">Hora de inicio</label>
+      <input id="inicio" name="inicio" type="time" value="10:00"></div>
+      <div class="campo "><label for="fin">Hora de finalización</label>
+      <input id="fin" name="fin" type="time" value="12:00"></div>
+      <div class="campo campo--ancho"><label for="motivo">Motivo</label>
+      <textarea id="motivo" name="motivo">Clase de repaso</textarea></div>
+      <div class="campo--ancho"><button class="btn btn--primario" type="submit">Confirmar reserva</button></div></form>
+<div><div class="tarjeta"><h2>Resumen</h2><p>Laboratorio de Sistemas<br>06/11/2026 · 10:00–12:00<br>25 de 30 asistentes</p></div>
+<div class="tarjeta"><h2>Validaciones</h2><ul class="lista"><li>✔ Espacio ACTIVO</li><li>✔ Hora inicial anterior a la final</li>
+  <li>✔ Sin conflicto de horario</li>
+  <li>✔ Sin bloqueo activo</li>
+  <li>✔ Dentro de la capacidad</li></ul></div></div></div>
+<h2>Ejemplos de mensajes (HU-07 y HU-12)</h2><div class="agenda"><div class="franja franja--libre"><b>08:00</b>
+  <span>Horario disponible</span></div><div class="franja franja--ocupada"><b>09:00</b><span>Horario ocupado</span></div>
+  <div class="franja franja--conflicto"><b>10:00</b><span>Conflicto: tu solicitud se superpone con otra reserva</span></div></div><br><div class="alerta alerta--ok">✔ Reserva creada. Código RES-0107.</div><div class="alerta alerta--error">✖ Conflicto de horario: el espacio ya está reservado en esa franja.</div><div class="alerta alerta--error">✖ Capacidad excedida: 45 asistentes, el espacio admite 30.</div><p class="cabecera">Representación visual: la validación real se hará en el backend.</p>
+  </main>
+  <footer class="pie">UNIAJC · Fundamentos Web · Primer avance. Yhojan Collo, William Diaz, Santiago Bocanegra</footer>
+</div>
+</body>
+</html>

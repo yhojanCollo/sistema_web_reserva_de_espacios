@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espacios | Reserva de Espacios UNIAJC</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<input class="menu-check" type="checkbox" id="menu-check" aria-label="Abrir menú">
+<nav class="menu" aria-label="Navegación principal">
+  <a class="menu__logo" href="../index.html">Reserva de Espacios</a>
+  <p class="menu__titulo">Usuario</p><a class="menu__link menu__link--activo" href="espacios.html">Espacios</a>
+  <a class="menu__link" href="disponibilidad.html">Buscar disponibilidad</a>
+  <a class="menu__link" href="agenda-espacio.html">Agenda de un espacio</a>
+  <a class="menu__link" href="crear-reserva.html">Crear reserva</a>
+  <a class="menu__link" href="mis-reservas.html">Mis reservas</a>
+  <p class="menu__titulo">Administración</p>
+  <a class="menu__link" href="dashboard.html">Dashboard</a>
+  <a class="menu__link" href="registrar-espacio.html">Registrar espacio</a>
+  <a class="menu__link" href="gestionar-bloqueos.html">Bloqueos</a>
+  <a class="menu__link" href="crear-bloqueo.html">Crear bloqueo</a>
+  <a class="menu__link" href="agenda-global.html">Agenda global</a>
+  <a class="menu__link" href="indicadores.html">Indicadores</a>
+  <p class="menu__titulo">Cuenta</p><a class="menu__link" href="login.html">Cerrar sesión</a>
+</nav>
+<div class="contenido">
+  <header class="barra"><label class="barra__boton" for="menu-check">☰</label>
+    <span class="barra__titulo">Sistema de Reserva de Espacios UNIAJC</span>
+    <a href="mis-reservas.html">Avisos (3)</a>
+    <span class="barra__perfil">Santiago Bocanegra · ADMINISTRADOR</span></header>
+  <main class="principal">
+    <div class="cabecera"><h1>Espacios</h1><p>Consulta y filtra los espacios disponibles.</p></div>
+<form class="tarjeta filtros" action="#" method="get"><div class="campo "><label for="q">Buscar por nombre</label>
+  <input id="q" name="q" type="search" value=""></div><div class="campo "><label for="tipo">Tipo</label>
+    <select id="tipo" name="tipo"><option>Todos</option><option>Auditorio</option><option>Sala de reuniones</option>
+    <option>Laboratorio</option><option>Sala de informática</option>
+    <option>Aula</option></select></div><div class="campo "><label for="capacidad">Capacidad</label>
+    <select id="capacidad" name="capacidad"><option>Cualquiera</option><option>10 o más</option>
+    <option>50 o más</option></select></div><div class="campo "><label for="estado">Estado</label>
+    <select id="estado" name="estado"><option>Todos</option><option>ACTIVO</option><option>MANTENIMIENTO</option>
+    <option>INACTIVO</option></select></div><button class="btn btn--primario" type="submit">Filtrar</button></form>
+<div class="grid grid--2"><article class="tarjeta"><div class="tarjeta__img">Auditorio Principal</div>
+  <h3>Auditorio Principal</h3><span class="estado estado--verde">ACTIVO</span>
+  <p>Auditorio · Bloque A, piso 1<br>Capacidad: 300 personas</p>
+  <a class="btn btn--peq" href="detalle-espacio.html">Ver detalle</a> 
+  <a class="btn btn--peq" href="editar-espacio.html">Editar</a></article>
+  <article class="tarjeta"><div class="tarjeta__img">Sala de Reuniones 201</div>
+    <h3>Sala de Reuniones 201</h3><span class="estado estado--verde">ACTIVO</span>
+    <p>Sala de reuniones · Bloque B, piso 2<br>Capacidad: 12 personas</p>
+    <a class="btn btn--peq" href="detalle-espacio.html">Ver detalle</a> 
+    <a class="btn btn--peq" href="editar-espacio.html">Editar</a></article>
+    <article class="tarjeta"><div class="tarjeta__img">Laboratorio de Sistemas</div>
+      <h3>Laboratorio de Sistemas</h3><span class="estado estado--verde">ACTIVO</span>
+      <p>Laboratorio · Bloque C, piso 3<br>Capacidad: 30 personas</p>
+      <a class="btn btn--peq" href="detalle-espacio.html">Ver detalle</a> 
+      <a class="btn btn--peq" href="editar-espacio.html">Editar</a></article>
+      <article class="tarjeta"><div class="tarjeta__img">Aula Múltiple</div><h3>Aula Múltiple</h3>
+      <span class="estado estado--naranja">MANTENIMIENTO</span>
+      <p>Aula · Bloque A, piso 2<br>Capacidad: 80 personas</p>
+      <a class="btn btn--peq" href="detalle-espacio.html">Ver detalle</a> 
+      <a class="btn btn--peq" href="editar-espacio.html">Editar</a></article></div>
+  </main>
+  <footer class="pie">UNIAJC · Fundamentos Web · Primer avance. Yhojan Collo, William Diaz, Santiago Bocanegra</footer>
+</div>
+</body>
+</html>

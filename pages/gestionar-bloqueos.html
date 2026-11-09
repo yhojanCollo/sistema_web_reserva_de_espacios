@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bloqueos | Reserva de Espacios UNIAJC</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<input class="menu-check" type="checkbox" id="menu-check" aria-label="Abrir menú">
+<nav class="menu" aria-label="Navegación principal">
+  <a class="menu__logo" href="../index.html">Reserva de Espacios</a>
+  <p class="menu__titulo">Usuario</p><a class="menu__link" href="espacios.html">Espacios</a>
+  <a class="menu__link" href="disponibilidad.html">Buscar disponibilidad</a>
+  <a class="menu__link" href="agenda-espacio.html">Agenda de un espacio</a>
+  <a class="menu__link" href="crear-reserva.html">Crear reserva</a>
+  <a class="menu__link" href="mis-reservas.html">Mis reservas</a>
+  <p class="menu__titulo">Administración</p>
+  <a class="menu__link" href="dashboard.html">Dashboard</a>
+  <a class="menu__link" href="registrar-espacio.html">Registrar espacio</a>
+  <a class="menu__link menu__link--activo" href="gestionar-bloqueos.html">Bloqueos</a>
+  <a class="menu__link" href="crear-bloqueo.html">Crear bloqueo</a>
+  <a class="menu__link" href="agenda-global.html">Agenda global</a>
+  <a class="menu__link" href="indicadores.html">Indicadores</a>
+  <p class="menu__titulo">Cuenta</p><a class="menu__link" href="login.html">Cerrar sesión</a>
+</nav>
+<div class="contenido">
+  <header class="barra"><label class="barra__boton" for="menu-check">☰</label>
+    <span class="barra__titulo">Sistema de Reserva de Espacios UNIAJC</span>
+    <a href="mis-reservas.html">Avisos (3)</a>
+    <span class="barra__perfil">Santiago Bocanegra · ADMINISTRADOR</span></header>
+  <main class="principal">
+    <div class="cabecera"><h1>Bloqueos</h1><p>Consulta y cancela bloqueos.</p></div>
+<div class="tarjeta"><div class="tabla-caja"><table class="tabla"><thead><tr><th>Código</th>
+  <th>Espacio</th><th>Fecha</th><th>Horario</th><th>Motivo</th><th>Estado</th><th></th></tr>
+  </thead><tbody><tr><td>BLQ-014</td><td>Laboratorio de Sistemas</td><td>05/11/2026</td><td>12:00–14:00</td><td>Mantenimiento</td><td><span class="estado estado--verde">ACTIVO</span></td><td>
+  <a class="btn btn--peligro btn--peq" href="#cancelar">Cancelar</a></td></tr>
+  <tr><td>BLQ-015</td><td>Auditorio Principal</td>
+  <td>12/11/2026</td><td>08:00–12:00</td>
+  <td>Actividad institucional</td><td>
+  <span class="estado estado--verde">ACTIVO</span></td><td></td></tr>
+  <tr><td>BLQ-011</td><td>Aula Múltiple</td><td>27/10/2026</td><td>14:00–16:00</td><td>Mantenimiento</td><td>
+  <span class="estado estado--rojo">CANCELADO</span></td><td></td></tr></tbody></table></div></div>
+<div class="modal" id="cancelar"><div class="modal__caja"><h2>¿Cancelar el bloqueo BLQ-014?</h2>
+  <p>El espacio volverá a estar disponible en ese horario.</p>
+  <a class="btn btn--peligro" href="#">Sí, cancelar</a> <a class="btn" href="#">Volver</a></div></div>
+  </main>
+  <footer class="pie">UNIAJC · Fundamentos Web · Primer avance. Yhojan Collo, William Diaz, Santiago Bocanegra</footer>
+</div>
+</body>
+</html>

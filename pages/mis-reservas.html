@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mis reservas | Reserva de Espacios UNIAJC</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<input class="menu-check" type="checkbox" id="menu-check" aria-label="Abrir menú">
+<nav class="menu" aria-label="Navegación principal">
+  <a class="menu__logo" href="../index.html">Reserva de Espacios</a>
+  <p class="menu__titulo">Usuario</p><a class="menu__link" href="espacios.html">Espacios</a>
+  <a class="menu__link" href="disponibilidad.html">Buscar disponibilidad</a>
+  <a class="menu__link" href="agenda-espacio.html">Agenda de un espacio</a>
+  <a class="menu__link" href="crear-reserva.html">Crear reserva</a>
+  <a class="menu__link menu__link--activo" href="mis-reservas.html">Mis reservas</a>
+  <p class="menu__titulo">Administración</p><a class="menu__link" href="dashboard.html">Dashboard</a>
+  <a class="menu__link" href="registrar-espacio.html">Registrar espacio</a>
+  <a class="menu__link" href="gestionar-bloqueos.html">Bloqueos</a>
+  <a class="menu__link" href="crear-bloqueo.html">Crear bloqueo</a>
+  <a class="menu__link" href="agenda-global.html">Agenda global</a>
+  <a class="menu__link" href="indicadores.html">Indicadores</a>
+  <p class="menu__titulo">Cuenta</p><a class="menu__link" href="login.html">Cerrar sesión</a>
+</nav>
+<div class="contenido">
+  <header class="barra"><label class="barra__boton" for="menu-check">☰</label><span class="barra__titulo">Sistema de Reserva de Espacios UNIAJC</span><a href="mis-reservas.html">Avisos (3)</a>
+    <span class="barra__perfil">Santiago Bocanegra · ADMINISTRADOR</span></header>
+  <main class="principal">
+    <div class="cabecera"><h1>Mis reservas</h1><p>Tu historial de reservas.</p></div>
+<form class="tarjeta filtros" action="#" method="get"><div class="campo "><label for="estado">Estado</label>
+  <select id="estado" name="estado"><option>Todos</option><option>ACTIVA</option>
+  <option>CANCELADA</option><option>FINALIZADA</option></select></div>
+  <div class="campo "><label for="fecha">Fecha</label>
+  <input id="fecha" name="fecha" type="date" value="2026-11-05"></div><span></span><span></span>
+  <button class="btn btn--primario" type="submit">Filtrar</button></form>
+<div class="tarjeta"><div class="tabla-caja"><table class="tabla"><thead><tr><th>Código</th><th>Espacio</th><th>Fecha</th>
+  <th>Horario</th><th>Motivo</th><th>Estado</th>
+  <th></th></tr></thead><tbody><tr><td>RES-0101</td><td>Laboratorio de Sistemas</td><td>05/11/2026</td>
+    <td>08:00–10:00</td><td>Práctica Fundamentos Web</td><td><span class="estado estado--verde">ACTIVA</span></td>
+    <td><a class="btn btn--peligro btn--peq" href="#cancelar">Cancelar</a></td></tr>
+    <tr><td>RES-0098</td><td>Auditorio Principal</td><td>28/10/2026</td><td>09:00–12:00</td><td>Charla de bienvenida</td>
+    <td><span class="estado estado--">FINALIZADA</span></td><td></td></tr><tr><td>RES-0095</td><td>Sala de Reuniones 201</td>
+    <td>30/10/2026</td><td>15:00–17:00</td><td>Reunión de semillero</td><td><span class="estado estado--rojo">CANCELADA</span></td><td></td></tr></tbody></table></div></div>
+<div class="modal" id="cancelar"><div class="modal__caja"><h2>¿Cancelar la reserva RES-0101?</h2><p>Quedará como CANCELADA en tu historial.</p><a class="btn btn--peligro" href="#">Sí, cancelar</a>
+   <a class="btn" href="#">Volver</a></div></div>
+  </main>
+  <footer class="pie">UNIAJC · Fundamentos Web · Primer avance. Yhojan Collo, William Diaz, Santiago Bocanegra</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editar espacio | Reserva de Espacios UNIAJC</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<input class="menu-check" type="checkbox" id="menu-check" aria-label="Abrir menú">
+<nav class="menu" aria-label="Navegación principal">
+  <a class="menu__logo" href="../index.html">Reserva de Espacios</a>
+  <p class="menu__titulo">Usuario</p><a class="menu__link" href="espacios.html">Espacios</a>
+  <a class="menu__link" href="disponibilidad.html">Buscar disponibilidad</a>
+  <a class="menu__link" href="agenda-espacio.html">Agenda de un espacio</a>
+  <a class="menu__link" href="crear-reserva.html">Crear reserva</a>
+  <a class="menu__link" href="mis-reservas.html">Mis reservas</a>
+  <p class="menu__titulo">Administración</p><a class="menu__link" href="dashboard.html">Dashboard</a>
+  <a class="menu__link" href="registrar-espacio.html">Registrar espacio</a>
+  <a class="menu__link" href="gestionar-bloqueos.html">Bloqueos</a>
+  <a class="menu__link" href="crear-bloqueo.html">Crear bloqueo</a>
+  <a class="menu__link" href="agenda-global.html">Agenda global</a>
+  <a class="menu__link" href="indicadores.html">Indicadores</a>
+  <p class="menu__titulo">Cuenta</p><a class="menu__link" href="login.html">Cerrar sesión</a>
+</nav>
+<div class="contenido">
+  <header class="barra"><label class="barra__boton" for="menu-check">☰</label>
+    <span class="barra__titulo">Sistema de Reserva de Espacios UNIAJC</span>
+    <a href="mis-reservas.html">Avisos (3)</a><span class="barra__perfil">Santiago Bocanegra · ADMINISTRADOR</span></header>
+  <main class="principal">
+    <div class="cabecera"><h1>Editar espacio</h1><p>Modifica los datos de un espacio existente.</p></div>
+<form class="tarjeta form" action="#" method="post"><div class="campo "><label for="nombre">Nombre</label>
+  <input id="nombre" name="nombre" type="text" value="Laboratorio de Sistemas"></div>
+  <div class="campo "><label for="tipo">Tipo de espacio</label><select id="tipo" name="tipo">
+    <option>Auditorio</option><option>Sala de reuniones</option><option selected>Laboratorio</option><option>Sala de informática</option>
+    <option>Aula</option></select></div><div class="campo "><label for="ubicacion">Ubicación</label>
+    <input id="ubicacion" name="ubicacion" type="text" value="Bloque C, piso 3"></div>
+    <div class="campo "><label for="capacidad">Capacidad</label>
+    <input id="capacidad" name="capacidad" type="number" value="30"></div>
+    <div class="campo campo--ancho"><label for="descripcion">Descripción</label>
+    <textarea id="descripcion" name="descripcion">Laboratorio con 30 equipos.</textarea>
+    </div><div class="campo "><label for="estado">Estado</label>
+    <select id="estado" name="estado"><option selected>ACTIVO</option>
+    <option>MANTENIMIENTO</option><option>INACTIVO</option></select></div>
+    <div class="campo--ancho"><button class="btn btn--primario" type="submit">Guardar cambios</button> 
+    <a class="btn" href="espacios.html">Cancelar</a></div></form>
+  </main>
+  <footer class="pie">UNIAJC · Fundamentos Web · Primer avance. Yhojan Collo, William Diaz, Santiago Bocanegra</footer>
+</div>
+</body>
+</html>

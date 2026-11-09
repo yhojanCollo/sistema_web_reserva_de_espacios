@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear bloqueo | Reserva de Espacios UNIAJC</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<input class="menu-check" type="checkbox" id="menu-check" aria-label="Abrir menú">
+<nav class="menu" aria-label="Navegación principal">
+  <a class="menu__logo" href="../index.html">Reserva de Espacios</a>
+  <p class="menu__titulo">Usuario</p><a class="menu__link" href="espacios.html">Espacios</a>
+  <a class="menu__link" href="disponibilidad.html">Buscar disponibilidad</a>
+  <a class="menu__link" href="agenda-espacio.html">Agenda de un espacio</a>
+  <a class="menu__link" href="crear-reserva.html">Crear reserva</a>
+  <a class="menu__link" href="mis-reservas.html">Mis reservas</a>
+  <p class="menu__titulo">Administración</p>
+  <a class="menu__link" href="dashboard.html">Dashboard</a>
+  <a class="menu__link" href="registrar-espacio.html">Registrar espacio</a>
+  <a class="menu__link" href="gestionar-bloqueos.html">Bloqueos</a>
+  <a class="menu__link menu__link--activo" href="crear-bloqueo.html">Crear bloqueo</a>
+  <a class="menu__link" href="agenda-global.html">Agenda global</a>
+  <a class="menu__link" href="indicadores.html">Indicadores</a>
+  <p class="menu__titulo">Cuenta</p><a class="menu__link" href="login.html">Cerrar sesión</a>
+</nav>
+<div class="contenido">
+  <header class="barra"><label class="barra__boton" for="menu-check">☰</label>
+    <span class="barra__titulo">Sistema de Reserva de Espacios UNIAJC</span>
+    <a href="mis-reservas.html">Avisos (3)</a><span class="barra__perfil">Santiago Bocanegra · ADMINISTRADOR</span></header>
+  <main class="principal">
+    <div class="cabecera"><h1>Crear bloqueo</h1><p>Impide reservas en un horario.</p></div>
+<form class="tarjeta form" action="#" method="post"><div class="campo ">
+  <label for="espacio">Espacio</label><select id="espacio" name="espacio">
+    <option>Auditorio Principal</option><option>Sala de Reuniones 201</option>
+    <option selected>Laboratorio de Sistemas</option><option>Aula Múltiple</option></select>
+  </div><div class="campo "><label for="fecha">Fecha</label>
+    <input id="fecha" name="fecha" type="date" value="2026-11-12"></div>
+    <div class="campo "><label for="inicio">Hora de inicio</label>
+    <input id="inicio" name="inicio" type="time" value="08:00"></div>
+    <div class="campo "><label for="fin">Hora de finalización</label>
+    <input id="fin" name="fin" type="time" value="12:00"></div>
+    <div class="campo campo--ancho"><label for="motivo">Motivo</label>
+    <select id="motivo" name="motivo"><option selected>Mantenimiento</option>
+    <option>Actividad institucional</option></select></div>
+    <div class="campo--ancho"><button class="btn btn--primario" type="submit">Guardar bloqueo</button></div></form>
+  </main>
+  <footer class="pie">UNIAJC · Fundamentos Web · Primer avance. Yhojan Collo, William Diaz, Santiago Bocanegra</footer>
+</div>
+</body>
+</html>
